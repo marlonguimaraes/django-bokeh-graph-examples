@@ -27,3 +27,7 @@ python manage.py runserver
 ```
 
 After step 1) or 2) the local server should be up at `http://0.0.0.0:8000/`
+
+**The bar example**
+
+![bar](bokeh_bar_plot.png)
