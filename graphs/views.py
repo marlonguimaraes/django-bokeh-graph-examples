@@ -30,7 +30,7 @@ def plot(request):
     script, div = components(p)
 
     # Feed them to the Django template.
-    return render_to_response('bokeh_graph.html',
+    return render(request, 'bokeh_graph.html',
                               {'script': script, 'div': div})
 
 def vbar(request):
@@ -54,6 +54,6 @@ def vbar(request):
     script, div = components(plot)
 
     # Feed them to the Django template.
-    return render_to_response('bokeh_graph.html',
-                              {'script': script, 'div': div})
+    return render(request, 'bokeh_graph.html',
+                  {'script': script, 'div': div})
 
